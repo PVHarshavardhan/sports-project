@@ -6,7 +6,7 @@ import { ArticleDetails } from "./ArticleDetails";
 export default function ArticlesListItems() {
     const state : any = useArticlesState();
     const { articles , isLoading, isError, errorMessage } = state;
-    console.log(articles);
+    // console.log(articles);
     if (articles.length == 0 && isLoading) {
         return <span>Loading ...</span>
     }

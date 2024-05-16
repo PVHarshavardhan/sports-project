@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import ArticlesList from "./ArticlesList";
 // import ErrorBoundary from "../../components/ErrorBoundary";
 
-const Projects = () => {
+const Articles = () => {
   return (
     <>
        <Suspense fallback={<div className="suspense-loading">Loading...</div>}>
@@ -14,4 +14,4 @@ const Projects = () => {
 };
 
 
-export default Projects;
+export default Articles;

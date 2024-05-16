@@ -1,13 +1,15 @@
 import { useEffect } from "react";
+import { fetchArticles } from "../../context/articles/actions";
 import { Outlet } from "react-router-dom";
+import { useMatchesDispatch } from "../../context/matches/context";
 
-const ArticlesContainer = () => {
-    const articleDispatch = useArticlesDispatch();
+const MatchesContainer = () => {
+    const MatchesDispatch = useMatchesDispatch();
     useEffect(() => {
-      fetchArticles(articleDispatch);
+      fetchArticles(MatchesDispatch);
       
-    }, [articleDispatch]);
+    }, [MatchesDispatch]);
     return <Outlet />;
   };
 
-export default ArticlesContainer;
+export default MatchesContainer;

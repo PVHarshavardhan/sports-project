@@ -5,6 +5,8 @@ import Logout from "../pages/logout";
 import Signup from "../pages/signup";
 import ArticlesContainer from "../pages/articles/ArticlesContainer";
 import Articles from "../pages/articles";
+import MatchesContainer from "../pages/matches/MatchesContainer";
+import Matches from "../pages/matches";
 
 
 const router = createBrowserRouter([
@@ -15,8 +17,9 @@ const router = createBrowserRouter([
           path:"articles",
           element:(
             <>
-            <ArticlesContainer />
-            <Articles />
+            <MatchesContainer />
+            <Matches />
+            
             </>
           )
         }
