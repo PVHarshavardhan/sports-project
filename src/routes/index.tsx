@@ -19,7 +19,8 @@ const router = createBrowserRouter([
             <>
             <MatchesContainer />
             <Matches />
-            
+            <ArticlesContainer />
+            <Articles />
             </>
           )
         }
